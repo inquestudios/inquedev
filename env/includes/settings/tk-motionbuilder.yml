@@ -22,6 +22,90 @@ includes:
 
 ################################################################################
 
+# shot_step_post
+settings.tk-motionbuilder.shot_step_post:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
+  # shot_step_render
+settings.tk-motionbuilder.shot_step_render:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
+  # showroom_step_ar
+settings.tk-motionbuilder.showroom_step_ar:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
+  # showroom_step_post
+settings.tk-motionbuilder.showroom_step_post:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
+  # showroom_step_render
+settings.tk-motionbuilder.render:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
+  # showroom_step_sprite
+settings.tk-motionbuilder.sprite:
+  apps:
+    tk-multi-about:
+      location: '@apps.tk-multi-about.location'
+    tk-multi-shotgunpanel:
+      location: "@apps.tk-multi-shotgunpanel.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-workfiles2:
+      location: '@apps.tk-multi-workfiles2.location'
+  location: '@engines.tk-motionbuilder.location'
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+
 # asset
 settings.tk-motionbuilder.asset:
   apps:

@@ -25,6 +25,84 @@ includes:
 
 ################################################################################
 
+# shot_step_post
+settings.tk-maya.shot_step_post:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
+  # shot_step_render
+settings.tk-maya.shot_step_render:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
+  # showroom_step_ar
+settings.tk-maya.showroom_step_ar:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
+  # showroom_step_post
+settings.tk-maya.showroom_step_post:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
+  # showroom_step_render
+settings.tk-maya.showroom_step_render:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
+  # showroom_step_sprite
+settings.tk-maya.showroom_step_sprite:
+  apps:
+    tk-multi-about:
+      location: "@apps.tk-multi-about.location"
+    tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+    tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
+  menu_favourites:
+  - {app_instance: tk-multi-workfiles2, name: File Open...}
+  debug_logging: false
+  location: "@engines.tk-maya.location"
+
 # asset
 settings.tk-maya.asset:
   apps:
@@ -32,13 +110,13 @@ settings.tk-maya.asset:
       location: "@apps.tk-multi-about.location"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   debug_logging: false
   location: "@engines.tk-maya.location"
 
-# asset_step
+# asset_step 
 settings.tk-maya.asset_step:
   apps:
     tk-multi-about:
@@ -48,11 +126,11 @@ settings.tk-maya.asset_step:
       location: "@apps.tk-multi-breakdown.location"
     tk-multi-breakdown2: "@settings.tk-multi-breakdown2.maya"
     tk-multi-loader2: "@settings.tk-multi-loader2.maya"
-    tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step"
+    tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step-model"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
-    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_step"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_step"
+    tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_step-model"
+    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_step-model"
     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.maya"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
@@ -60,8 +138,58 @@ settings.tk-maya.asset_step:
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   - {app_instance: tk-multi-breakdown2, name: Scene Breakdown...}
-  template_project: asset_work_area_maya
+  template_project: asset_work_area_maya_model
   location: "@engines.tk-maya.location"
+
+# # asset_step Model
+# settings.tk-maya.asset_step-model:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-breakdown:
+#       display_name: "Legacy Breakdown"
+#       location: "@apps.tk-multi-breakdown.location"
+#     tk-multi-breakdown2: "@settings.tk-multi-breakdown2.maya"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step-model"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_step-model"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_step-model"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.maya"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   - {app_instance: tk-multi-snapshot, name: Snapshot...}
+#   - {app_instance: tk-multi-workfiles2, name: File Save...}
+#   - {app_instance: tk-multi-publish2, name: Publish...}
+#   - {app_instance: tk-multi-breakdown2, name: Scene Breakdown...}
+#   template_project: asset_work_area_maya_model
+#   location: "@engines.tk-maya.location"
+
+# # asset_step Material
+# settings.tk-maya.asset_step-material:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-breakdown:
+#       display_name: "Legacy Breakdown"
+#       location: "@apps.tk-multi-breakdown.location"
+#     tk-multi-breakdown2: "@settings.tk-multi-breakdown2.maya"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step-material"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.maya.asset_step-material"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_step-material"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.maya"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   - {app_instance: tk-multi-snapshot, name: Snapshot...}
+#   - {app_instance: tk-multi-workfiles2, name: File Save...}
+#   - {app_instance: tk-multi-publish2, name: Publish...}
+#   - {app_instance: tk-multi-breakdown2, name: Scene Breakdown...}
+#   template_project: asset_work_area_maya_material
+#   location: "@engines.tk-maya.location"
 
 # project
 settings.tk-maya.project:
@@ -70,7 +198,7 @@ settings.tk-maya.project:
       location: "@apps.tk-multi-about.location"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   location: "@engines.tk-maya.location"
@@ -82,7 +210,7 @@ settings.tk-maya.sequence:
       location: "@apps.tk-multi-about.location"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   location: "@engines.tk-maya.location"
@@ -94,7 +222,7 @@ settings.tk-maya.shot:
       location: "@apps.tk-multi-about.location"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
-    tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup"
+    #tk-multi-workfiles2: "@settings.tk-multi-workfiles2.launch_at_startup-maya"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
   location: "@engines.tk-maya.location"

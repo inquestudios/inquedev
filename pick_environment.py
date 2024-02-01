@@ -73,8 +73,6 @@ class PickEnvironment(Hook):
                 return "material"
             if context.entity["type"] == "CustomEntity02": 
                 return "scene"
-            if context.entity["type"] == "CustomEntity03": 
-                return "material_family"
 
         if context.entity and context.step:
             # We have a step and an entity.     

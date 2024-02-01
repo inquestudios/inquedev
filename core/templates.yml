@@ -50,10 +50,10 @@ keys:
         type: str
         shotgun_entity_type: CustomEntity03
         shotgun_field_name: code
-    parent_asset:
+    material_family:
         type: str 
-        shotgun_entity_type: CustomEntity03
-        shotgun_field_name: sg_master_material.customentity03.code 
+        shotgun_entity_type: CustomEntity01
+        shotgun_field_name: code
     task_name:
         type: str
         shotgun_entity_type: Task

@@ -78,6 +78,90 @@ settings.tk-nuke.hiero.project:
 ################################################################################
 # Nuke
 
+# # shot_step_post
+# settings.tk-nuke.shot_step_post:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
+#   # shot_step_render
+# settings.tk-nuke.shot_step_render:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
+#   # showroom_step_ar
+# settings.tk-nuke.showroom_step_ar:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
+#   # showroom_step_post
+# settings.tk-nuke.showroom_step_post:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
+#   # showroom_step_render
+# settings.tk-nuke.showroom_step_render:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
+#   # showroom_step_ar
+# settings.tk-nuke.showroom_step_sprite:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#   menu_favourites:
+#   - {app_instance: tk-multi-workfiles2, name: File Open...}
+#   location: "@engines.tk-nuke.location"
+
 # asset
 settings.tk-nuke.asset:
   apps:
@@ -192,6 +276,247 @@ settings.tk-nuke.shot_step:
 
 ################################################################################
 # NukeStudio
+
+# # shot_step_post
+# settings.tk-nuke.nukestudio.shot_step_post:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.shot"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.shot"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#   location: '@engines.tk-nuke.location'
+
+# # shot_step_render
+# settings.tk-nuke.nukestudio.shot_step_render:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.shot"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.shot"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#   location: '@engines.tk-nuke.location'
+
+# # showroom_step_ar
+# settings.tk-nuke.nukestudio.showroom_step_ar:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.showroom"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.showroom"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#   location: '@engines.tk-nuke.location'
+
+# # showroom_step_post
+# settings.tk-nuke.nukestudio.showroom_step_post:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.showroom"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.showroom"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#   location: '@engines.tk-nuke.location'
+
+# # showroom_step_render
+# settings.tk-nuke.nukestudio.showroom_step_render:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.showroom"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.showroom"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#   location: '@engines.tk-nuke.location'
+
+# # showroom_step_sprite
+# settings.tk-nuke.nukestudio.showroom_step_sprite:
+#   apps:
+#     tk-multi-about:
+#       location: "@apps.tk-multi-about.location"
+#     tk-multi-setframerange:
+#       location: "@apps.tk-multi-setframerange.location"
+#     tk-multi-breakdown: "@settings.tk-multi-breakdown.nukestudio"
+#     tk-multi-loader2: "@settings.tk-multi-loader2.nukestudio"
+#     tk-multi-publish2: "@settings.tk-multi-publish2.nukestudio"
+#     tk-multi-reviewsubmission: "@settings.tk-multi-reviewsubmission.nuke.showroom"
+#     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
+#     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.nukestudio"
+#     tk-multi-snapshot: "@settings.tk-multi-snapshot.hiero"
+#     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.hiero"
+#     tk-nuke-quickreview:
+#       location: "@apps.tk-nuke-quickreview.location"
+#     tk-nuke-writenode: "@settings.tk-nuke-writenode.showroom"
+#   bin_context_menu:
+#   - app_instance: tk-multi-workfiles2
+#     keep_in_menu: false
+#     name: "File Save..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot..."
+#     requires_selection: true
+#   - app_instance: tk-multi-snapshot
+#     keep_in_menu: false
+#     name: "Snapshot History..."
+#     requires_selection: true
+#   - app_instance: tk-multi-publish2
+#     keep_in_menu: false
+#     name: "Publish..."
+#     requires_selection: true
+#   menu_favourites:
+#   - app_instance: tk-multi-workfiles2
+#     name: "File Open..."
+#  location: '@engines.tk-nuke.location'
+
 
 # asset_step
 settings.tk-nuke.nukestudio.asset_step:

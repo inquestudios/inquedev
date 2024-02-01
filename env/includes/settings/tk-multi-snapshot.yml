@@ -18,8 +18,18 @@ includes:
 # ---- 3dsMaxPlus
 
 settings.tk-multi-snapshot.3dsmaxplus.asset_step: &settings_tk-multi-snapshot_3dsmaxplus_asset_step
-  template_snapshot: max_asset_snapshot
-  template_work: max_asset_work
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.material_step: &settings_tk-multi-snapshot_3dsmaxplus_material_step
+  template_snapshot: max_customentity03_snapshot
+  template_work: max_customentity03_work
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.scene_step: &settings_tk-multi-snapshot_3dsmaxplus_scene_step
+  template_snapshot: max_customentity02_snapshot
+  template_work: max_customentity02_work
   location: "@apps.tk-multi-snapshot.location"
 
 settings.tk-multi-snapshot.3dsmaxplus.shot_step: &settings_tk-multi-snapshot_3dsmaxplus_shot_step
@@ -27,17 +37,107 @@ settings.tk-multi-snapshot.3dsmaxplus.shot_step: &settings_tk-multi-snapshot_3ds
   template_work: max_shot_work
   location: "@apps.tk-multi-snapshot.location"
 
+settings.tk-multi-snapshot.3dsmaxplus.shot_step_post: &settings_tk-multi-snapshot_3dsmaxplus_shot_step_post
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.shot_step_render: &settings_tk-multi-snapshot_3dsmaxplus_shot_step_render
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.showroom_step_ar: &settings_tk-multi-snapshot_3dsmaxplus_showroom_step_ar
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.showroom_step_post: &settings_tk-multi-snapshot_3dsmaxplus_showroom_step_post
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+settings.tk-multi-snapshot.3dsmaxplus.showroom_step_render: &settings_tk-multi-snapshot_3dsmaxplus_showroom_step_render
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+settings.tk-multi-snapshot.3dsmaxplus.showroom_step_sprite: &settings_tk-multi-snapshot_3dsmaxplus_showroom_step_sprite
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"    
+
+
+
 ################################################################################
 
 # ---- 3dsMax
 
-settings.tk-multi-snapshot.3dsmax.asset_step:
-  <<: *settings_tk-multi-snapshot_3dsmaxplus_asset_step
-  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
-settings.tk-multi-snapshot.3dsmax.shot_step:
-  <<: *settings_tk-multi-snapshot_3dsmaxplus_shot_step
-  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+#settings.tk-multi-snapshot.3dsmax.asset_step:
+ # <<: *settings_tk-multi-snapshot_3dsmaxplus_asset_step
+ # hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+#settings.tk-multi-snapshot.3dsmax.shot_step:
+ # <<: *settings_tk-multi-snapshot_3dsmaxplus_shot_step
+# hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
 
+# shot_step_post
+settings.tk-multi-snapshot.3dsmax.shot_step_post:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# shot_step_render
+settings.tk-multi-snapshot.3dsmax.shot_step_render:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# showroom_step_ar
+settings.tk-multi-snapshot.3dsmax.showroom_step_ar:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# showroom_step_post
+settings.tk-multi-snapshot.3dsmax.showroom_step_post:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# showroom_step_render
+settings.tk-multi-snapshot.3dsmax.showroom_step_render:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# showroom_step_sprite
+settings.tk-multi-snapshot.3dsmax.showroom_step_sprite:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# asset step - Model
+settings.tk-multi-snapshot.3dsmax.asset_step:
+  template_snapshot: max_asset_snapshot_model
+  template_work: max_asset_work_model
+  location: "@apps.tk-multi-snapshot.location"
+
+# customentity01 - Material Step
+settings.tk-multi-snapshot.3dsmax.material_step:
+  template_snapshot: max_customentity03_snapshot
+  template_work: max_customentity03_work
+  location: "@apps.tk-multi-snapshot.location"  
+
+ # customentity01 - Scene Step
+settings.tk-multi-snapshot.3dsmax.scene_step:
+  template_snapshot: max_customentity02_snapshot
+  template_work: max_customentity02_snapshot
+  location: "@apps.tk-multi-snapshot.location"  
+
+# shot step
+settings.tk-multi-snapshot.3dsmax.shot_step:
+  template_snapshot: max_shot_snapshot
+  template_work: max_shot_work
+  location: "@apps.tk-multi-snapshot.location"
 ################################################################################
 
 # ---- Hiero
@@ -67,9 +167,15 @@ settings.tk-multi-snapshot.houdini.shot_step:
 
 # ---- Maya
 
-# asset step
-settings.tk-multi-snapshot.maya.asset_step:
-  template_snapshot: maya_asset_snapshot
+# asset step - Model
+settings.tk-multi-snapshot.maya.asset_step-model:
+  template_snapshot: maya_asset_snapshot_model
+  template_work: maya_asset_work
+  location: "@apps.tk-multi-snapshot.location"
+
+# asset step - Material
+settings.tk-multi-snapshot.maya.asset_step-material:
+  template_snapshot: maya_asset_snapshot_material
   template_work: maya_asset_work
   location: "@apps.tk-multi-snapshot.location"
 
@@ -111,6 +217,42 @@ settings.tk-multi-snapshot.photoshop.shot_step:
   template_work: photoshop_shot_work
   location: "@apps.tk-multi-snapshot.location"
 
+  # shot_step_post
+settings.tk-multi-snapshot.photoshop.shot_step_post:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+  # shot_step_render
+settings.tk-multi-snapshot.photoshop.shot_step_render:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_ar
+settings.tk-multi-snapshot.photoshop.showroom_step_ar:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_post
+settings.tk-multi-snapshot.photoshop.showroom_step_post:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_render
+settings.tk-multi-snapshot.photoshop.showroom_step_render:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_sprite
+settings.tk-multi-snapshot.photoshop.showroom_step_sprite:
+  template_snapshot: photoshop_shot_snapshot
+  template_work: photoshop_shot_work
+  location: "@apps.tk-multi-snapshot.location"
+
 ################################################################################
 
 # ---- After Effects
@@ -128,6 +270,49 @@ settings.tk-multi-snapshot.aftereffects.shot_step:
   template_work: aftereffects_shot_work
   hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
   location: "@apps.tk-multi-snapshot.location"
+
+# shot_step_post
+settings.tk-multi-snapshot.aftereffects.shot_step_post:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+
+  # shot_step_render
+settings.tk-multi-snapshot.aftereffects.shot_step_render:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_ar
+settings.tk-multi-snapshot.aftereffects.showroom_step_ar:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_post
+settings.tk-multi-snapshot.aftereffects.showroom_step_post:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+
+  # showroom_step_render
+settings.tk-multi-snapshot.aftereffects.showroom_step_render:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+  
+  # showroom_step_sprite
+settings.tk-multi-snapshot.aftereffects.showroom_step_sprite:
+  template_snapshot: aftereffects_shot_snapshot
+  template_work: aftereffects_shot_work
+  hook_scene_operation: "{engine}/tk-multi-snapshot/basic/scene_operation.py"
+  location: "@apps.tk-multi-snapshot.location"
+
 
 ################################################################################
 

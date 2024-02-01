@@ -24,6 +24,11 @@ settings.tk-multi-loader2.3dsmaxplus: &settings_tk-multi-loader2_3dsmaxplus
     Rendered Image: [texture_node]
     Texture: [texture_node]
   entities:
+  - caption: Materials
+    entity_type: CustomEntity03
+    filters:
+    - [project, is, '{context.project}']
+    hierarchy: [code]
   - caption: Assets
     entity_type: Asset
     filters:

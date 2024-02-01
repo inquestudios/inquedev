@@ -31,7 +31,7 @@ apps.tk-multi-breakdown.location:
 apps.tk-multi-breakdown2.location:
   type: app_store
   name: tk-multi-breakdown2
-  version: v0.2.9
+  version: v0.2.7
 apps.tk-multi-data-validation.location:
   type: app_store
   name: tk-multi-data-validation
@@ -43,19 +43,19 @@ apps.tk-multi-demo.location:
 apps.tk-multi-launchapp.location:
   type: app_store
   name: tk-multi-launchapp
-  version: v0.12.6
+  version: v0.12.3
 apps.tk-multi-loader2.location:
   type: app_store
   name: tk-multi-loader2
-  version: v1.23.2
+  version: v1.22.1
 apps.tk-multi-publish2.location:
   type: app_store
   name: tk-multi-publish2
-  version: v2.6.9
+  version: v2.6.7
 apps.tk-multi-pythonconsole.location:
   type: app_store
   name: tk-multi-pythonconsole
-  version: v1.3.2
+  version: v1.3.1
 apps.tk-multi-reviewsubmission.location:
   type: app_store
   name: tk-multi-reviewsubmission
@@ -67,11 +67,11 @@ apps.tk-multi-screeningroom.location:
 apps.tk-multi-setframerange.location:
   type: app_store
   name: tk-multi-setframerange
-  version: v0.5.2
+  version: v0.5.1
 apps.tk-multi-shotgunpanel.location:
   type: app_store
   name: tk-multi-shotgunpanel
-  version: v1.8.8
+  version: v1.8.6
 apps.tk-multi-snapshot.location:
   type: app_store
   name: tk-multi-snapshot
@@ -79,7 +79,7 @@ apps.tk-multi-snapshot.location:
 apps.tk-multi-workfiles2.location:
   type: app_store
   name: tk-multi-workfiles2
-  version: v0.14.1
+  version: v0.13.6
 apps.tk-multi-devutils.location:
   type: app_store
   name: tk-multi-devutils
@@ -87,7 +87,7 @@ apps.tk-multi-devutils.location:
 apps.tk-multi-bg-publish.location:
   type: app_store
   name: tk-multi-bg-publish
-  version: v0.1.5
+  version: v0.1.4
 apps.tk-shotgun-folders.location:
   type: app_store
   name: tk-shotgun-folders
@@ -135,7 +135,7 @@ apps.tk-flame-export.location:
 apps.tk-flame-review.location:
   name: tk-flame-review
   type: app_store
-  version: v1.4.6
+  version: v1.4.5
 apps.tk-mari-projectmanager.location:
   name: tk-mari-projectmanager
   type: app_store

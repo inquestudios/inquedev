@@ -35,6 +35,11 @@ settings.tk-multi-breakdown2.maya:
   hook_scene_operations: '{self}/tk-maya_scene_operations.py'
   location: "@apps.tk-multi-breakdown2.location"
 
+# 3dsmax
+settings.tk-multi-breakdown2.3dsmax:
+  hook_scene_operations: '{self}/tk-3dsmax_scene_operations.py'
+  location: "@apps.tk-multi-breakdown2.location"
+
 # Nuke
 settings.tk-multi-breakdown2.nuke:
   hook_scene_operations: '{self}/tk-nuke_scene_operations.py'
