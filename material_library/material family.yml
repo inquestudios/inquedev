@@ -1,0 +1,7 @@
+#MaterialLibrary
+
+type: "shotgun_entity"
+entity_type: "CustomEntity01"
+name: "code"  # This might be a placeholder or actual folder name you want to use
+filters:
+  - { "path": "project", "relation": "is", "values": ["$material_library"] }
