@@ -1,0 +1,9 @@
+# the type of dynamic content
+type: "shotgun_step"
+
+# the shotgun field to use for the folder name
+name: "short_name"
+
+# filters:
+#     - { "path": "project", "relation": "is", "values": [ "$scene_library" ] }
+#     - { "path": "step", "relation": "is", "values": [ "$step" ] }
