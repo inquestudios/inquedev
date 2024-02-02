@@ -2,8 +2,7 @@
 
 type: "shotgun_entity"
 entity_type: "CustomEntity03"
-name: "code"  # This might be a placeholder or actual folder name you want to use
+name: "code"  
 filters:
   - { "path": "project", "relation": "is", "values": ["$material_library"] }
-  - { "path": "sg_material_family", "relation": "is", "values": ["$customentity01"] }
-
+  - { "path": "sg_material_family", "relation": "is", "values": ["customentity01"]}

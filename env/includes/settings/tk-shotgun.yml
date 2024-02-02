@@ -143,7 +143,7 @@ settings.tk-shotgun.asset_step:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# custom entity 01 Material
+# custom entity 03 Material
 settings.tk-shotgun.material:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp.shotgun"
@@ -152,7 +152,7 @@ settings.tk-shotgun.material:
     tk-shotgun-launchfolder: "@settings.tk-shotgun-launchfolder"
   location: "@engines.tk-shotgun.location"
 
-# custom entity 01 Material Step
+# custom entity 03 Material Step
 settings.tk-shotgun.material_step:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp.shotgun"
@@ -247,7 +247,7 @@ settings.tk-shotgun.version:
     tk-shotgun-launchvredreview: "@settings.tk-shotgun-launchvredreview"
   location: "@engines.tk-shotgun.location"
 
-# material_family
+# custom entity 03 material_family
 settings.tk-shotgun.material_family:
   apps:
     tk-multi-launchapp: "@settings.tk-multi-launchapp.shotgun"

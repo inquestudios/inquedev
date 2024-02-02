@@ -24,8 +24,8 @@ entity_type: "Asset"
 # any values starting with $ are resolved into path objects
 filters:
     - { "path": "project", "relation": "is", "values": [ "$model_library" ] }
-    - { "path": "sg_variant.Sequence.episode", "relation": "is", "values": [ "$episode" ] }
-    - { "path": "sg_asset_type", "relation": "is", "values": ["Mesh"] }
-    - { "path": "sg_variant", "relation": "is", "values": [ "$sequence" ] }
+    - { "path": "sg_configuration.Reel.sg_variant.Sequence.episode", "relation": "is", "values": [ "$episode" ] }
+    - { "path": "sg_asset_type", "relation": "is", "values": ["Prop"] }
+    - { "path": "sg_configuration.Reel.sg_variant", "relation": "is", "values": [ "$sequence" ] }
 
 
