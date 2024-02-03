@@ -61,7 +61,7 @@ class PickEnvironment(Hook):
                 return "sequence"
             if context.entity["type"] == "Episode":
                 return "episode" 
-            if context.entity["type"] == "CustomEntity01": 
+            if context.entity["type"] == "CustomEntity03": 
                 return "material"
             if context.entity["type"] == "CustomEntity02": 
                 return "scene"
@@ -108,7 +108,7 @@ class PickEnvironment(Hook):
                         return "shot_step"
             if context.entity["type"] == "Asset":
                 return "asset_step"
-            if context.entity["type"] == "CustomEntity01":
+            if context.entity["type"] == "CustomEntity03":
                 return "material_step"
             if context.entity["type"] == "CustomEntity02":
                 return "scene_step"
