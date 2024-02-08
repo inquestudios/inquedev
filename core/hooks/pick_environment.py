@@ -36,7 +36,9 @@ class PickEnvironment(Hook):
             elif context.source_entity["type"] == "CustomEntity02":
                 return "scene"
             elif context.source_entity["type"] == "CustomEntity01":
-                return "material_family" 
+                return "material_family"
+            elif context.source_entity["type"] == "Reel":
+                return "product" 
 
         if context.project is None:
             # Our context is completely empty. We're going into the site context.
@@ -77,6 +79,9 @@ class PickEnvironment(Hook):
                 return "scene"
             if context.entity["type"] == "CustomEntity01": 
                 return "material_family"
+            if context.entity["type"] == "Reel": 
+                return "product"
+            
 
         if context.entity and context.step:
             # We have a step and an entity.     
