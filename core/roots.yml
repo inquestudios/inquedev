@@ -1,6 +1,6 @@
 showroom:
   linux_path: null
-  mac_path: /Volumes/SHOWROOM
+  mac_path: /Amazon S3 (inque-showroom)
   windows_path: A:\
   shotgun_storage_id: 180
 
@@ -8,7 +8,7 @@ showroom:
 
 renders:
   linux_path: null
-  mac_path: /Volumes/RENDERS
+  mac_path: /Amazon S3 (inque-renders)
   windows_path: G:\
   shotgun_storage_id: 178
 
@@ -16,7 +16,7 @@ renders:
 
 delivery:
   linux_path: null
-  mac_path: /Volumes/DELIVERY
+  mac_path: /Amazon S3 (inque-delivery)
   windows_path: E:\
   shotgun_storage_id: 177
 
@@ -25,7 +25,7 @@ delivery:
 scene_library:
   linux_path: null
   shotgun_storage_id: 176
-  mac_path: /Volumes/SCENE_LIBRARY
+  mac_path: /Amazon S3 (inque-scene-library)
   windows_path: H:\
 
 
@@ -34,7 +34,7 @@ scene_library:
 production:
   default: true  
   linux_path: null
-  mac_path: /Volumes/PRODUCTION
+  mac_path: /Amazon S3 (inque-production)
   windows_path: F:\
   shotgun_storage_id: 173
 
@@ -42,7 +42,7 @@ production:
 
 material_library:
   linux_path: null
-  mac_path: /Volumes/MATERIAL_LIBRARY
+  mac_path: /Amazon S3 (inque-material-library)
   windows_path: Y:\
   shotgun_storage_id: 172
 
@@ -51,7 +51,7 @@ material_library:
 
 model_library:
   linux_path: null
-  mac_path: /Volumes/MODEL_LIBRARY
+  mac_path: /Amazon S3 (inque-model-library)
   shotgun_storage_id: 137
   windows_path: I:\
 

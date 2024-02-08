@@ -2,7 +2,7 @@
 
 type: "shotgun_entity"
 entity_type: "CustomEntity03"
-name: "code"  
+name: "sg_inq_id"  
 filters:
   - { "path": "project", "relation": "is", "values": ["$material_library"] }
   - { "path": "sg_material_family", "relation": "is", "values": [ "$material_family" ] }
